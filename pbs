@@ -1,0 +1,7 @@
+
+
+conda create --name py3cuda python=3.7
+conda activate py37cuda
+git clone https://github.com/flatironinstitute/DeepFRI.git
+cd DeepFRI/
+pip install .

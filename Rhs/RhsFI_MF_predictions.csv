@@ -1,0 +1,11 @@
+### Predictions made by DeepFRI.
+Protein,GO_term/EC_number,Score,GO_term/EC_number name
+query_prot,GO:0140096,0.16045,"catalytic activity, acting on a protein"
+query_prot,GO:0030246,0.14852,carbohydrate binding
+query_prot,GO:0005215,0.11428,transporter activity
+query_prot,GO:0008233,0.10977,peptidase activity
+query_prot,GO:0016772,0.10964,"transferase activity, transferring phosphorus-containing groups"
+query_prot,GO:0022857,0.10938,transmembrane transporter activity
+query_prot,GO:0003677,0.10714,DNA binding
+query_prot,GO:0016746,0.10672,"transferase activity, transferring acyl groups"
+query_prot,GO:0070011,0.10664,"peptidase activity, acting on L-amino acid peptides"

@@ -1,0 +1,222 @@
+
+Remove all packages in environment /srv/scratch/z5312523/Miniconda3/envs/py37:
+
+
+## Package Plan ##
+
+  environment location: /srv/scratch/z5312523/Miniconda3/envs/py37
+
+
+The following packages will be REMOVED:
+
+  _libgcc_mutex-0.1-conda_forge
+  _openmp_mutex-4.5-2_gnu
+  ca-certificates-2024.2.2-hbcca054_0
+  ld_impl_linux-64-2.40-hf3520f5_1
+  libffi-3.4.2-h7f98852_5
+  libgcc-ng-13.2.0-h77fa898_7
+  libgomp-13.2.0-h77fa898_7
+  libnsl-2.0.1-hd590300_0
+  libsqlite-3.45.3-h2797004_0
+  libstdcxx-ng-13.2.0-hc0a3c3a_7
+  libzlib-1.2.13-h4ab18f5_6
+  ncurses-6.5-h59595ed_0
+  openssl-3.3.0-h4ab18f5_3
+  pip-24.0-pyhd8ed1ab_0
+  python-3.7.12-hf930737_100_cpython
+  readline-8.2-h8228510_1
+  setuptools-69.0.3-pyhd8ed1ab_0
+  sqlite-3.45.3-h2c6b66d_0
+  tk-8.6.13-noxft_h4845f30_101
+  wheel-0.42.0-pyhd8ed1ab_0
+  xz-5.2.6-h166bdaf_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+Channels:
+ - bioconda
+ - conda-forge
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /srv/scratch/z5312523/Miniconda3/envs/py3cuda
+
+  added / updated specs:
+    - python=3.7
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      conda-forge/linux-64::_libgcc_mutex-0.1-conda_forge 
+  _openmp_mutex      conda-forge/linux-64::_openmp_mutex-4.5-2_gnu 
+  ca-certificates    conda-forge/linux-64::ca-certificates-2024.2.2-hbcca054_0 
+  ld_impl_linux-64   conda-forge/linux-64::ld_impl_linux-64-2.40-hf3520f5_1 
+  libffi             conda-forge/linux-64::libffi-3.4.2-h7f98852_5 
+  libgcc-ng          conda-forge/linux-64::libgcc-ng-13.2.0-h77fa898_7 
+  libgomp            conda-forge/linux-64::libgomp-13.2.0-h77fa898_7 
+  libnsl             conda-forge/linux-64::libnsl-2.0.1-hd590300_0 
+  libsqlite          conda-forge/linux-64::libsqlite-3.45.3-h2797004_0 
+  libstdcxx-ng       conda-forge/linux-64::libstdcxx-ng-13.2.0-hc0a3c3a_7 
+  libzlib            conda-forge/linux-64::libzlib-1.2.13-h4ab18f5_6 
+  ncurses            conda-forge/linux-64::ncurses-6.5-h59595ed_0 
+  openssl            conda-forge/linux-64::openssl-3.3.0-h4ab18f5_3 
+  pip                conda-forge/noarch::pip-24.0-pyhd8ed1ab_0 
+  python             conda-forge/linux-64::python-3.7.12-hf930737_100_cpython 
+  readline           conda-forge/linux-64::readline-8.2-h8228510_1 
+  setuptools         conda-forge/noarch::setuptools-69.0.3-pyhd8ed1ab_0 
+  sqlite             conda-forge/linux-64::sqlite-3.45.3-h2c6b66d_0 
+  tk                 conda-forge/linux-64::tk-8.6.13-noxft_h4845f30_101 
+  wheel              conda-forge/noarch::wheel-0.42.0-pyhd8ed1ab_0 
+  xz                 conda-forge/linux-64::xz-5.2.6-h166bdaf_0 
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+#
+# To activate this environment, use
+#
+#     $ conda activate py3cuda
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+
+EnvironmentNameNotFound: Could not find conda environment: py37cuda
+You can list all discoverable environments with `conda info --envs`.
+
+
+Cloning into 'DeepFRI'...
+Updating files:  83% (55/66)Updating files:  84% (56/66)Updating files:  86% (57/66)Updating files:  87% (58/66)Updating files:  89% (59/66)Updating files:  90% (60/66)Updating files:  92% (61/66)Updating files:  93% (62/66)Updating files:  95% (63/66)Updating files:  96% (64/66)Updating files:  98% (65/66)Updating files: 100% (66/66)Updating files: 100% (66/66), done.
+Processing /srv/scratch/z5312523/deepfri37cuda/DeepFRI
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting numpy==1.18.5 (from DeepFRI==0.0.1)
+  Downloading numpy-1.18.5.zip (5.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.4/5.4 MB 85.7 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [54 lines of output]
+      Running from numpy source directory.
+      <string>:461: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
+      /scratch/pbs.5396469.kman.restech.unsw.edu.au/pip-install-m1h6pekz/numpy_040133d9aefd47b690661e2ce88a6f6b/tools/cythonize.py:75: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+        required_version = LooseVersion('0.29.14')
+      /scratch/pbs.5396469.kman.restech.unsw.edu.au/pip-install-m1h6pekz/numpy_040133d9aefd47b690661e2ce88a6f6b/tools/cythonize.py:77: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+        if LooseVersion(cython_version) < required_version:
+      
+      Error compiling Cython file:
+      ------------------------------------------------------------
+      ...
+              for i in range(1, RK_STATE_LEN):
+                  self.rng_state.key[i] = val[i]
+              self.rng_state.pos = i
+      
+              self._bitgen.state = &self.rng_state
+              self._bitgen.next_uint64 = &mt19937_uint64
+                                         ^
+      ------------------------------------------------------------
+      
+      _mt19937.pyx:138:35: Cannot assign type 'uint64_t (*)(void *) except? -1 nogil' to 'uint64_t (*)(void *) noexcept nogil'. Exception values are incompatible. Suggest adding 'noexcept' to the type of the value being assigned.
+      Processing numpy/random/_bounded_integers.pxd.in
+      Processing numpy/random/_mt19937.pyx
+      Traceback (most recent call last):
+        File "/scratch/pbs.5396469.kman.restech.unsw.edu.au/pip-install-m1h6pekz/numpy_040133d9aefd47b690661e2ce88a6f6b/tools/cythonize.py", line 238, in <module>
+          main()
+        File "/scratch/pbs.5396469.kman.restech.unsw.edu.au/pip-install-m1h6pekz/numpy_040133d9aefd47b690661e2ce88a6f6b/tools/cythonize.py", line 234, in main
+          find_process_files(root_dir)
+        File "/scratch/pbs.5396469.kman.restech.unsw.edu.au/pip-install-m1h6pekz/numpy_040133d9aefd47b690661e2ce88a6f6b/tools/cythonize.py", line 225, in find_process_files
+          process(root_dir, fromfile, tofile, function, hash_db)
+        File "/scratch/pbs.5396469.kman.restech.unsw.edu.au/pip-install-m1h6pekz/numpy_040133d9aefd47b690661e2ce88a6f6b/tools/cythonize.py", line 191, in process
+          processor_function(fromfile, tofile)
+        File "/scratch/pbs.5396469.kman.restech.unsw.edu.au/pip-install-m1h6pekz/numpy_040133d9aefd47b690661e2ce88a6f6b/tools/cythonize.py", line 80, in process_pyx
+          subprocess.check_call(
+        File "/srv/scratch/z5312523/Miniconda3/lib/python3.10/subprocess.py", line 369, in check_call
+          raise CalledProcessError(retcode, cmd)
+      subprocess.CalledProcessError: Command '['/srv/scratch/z5312523/Miniconda3/bin/python3.10', '-m', 'cython', '-3', '--fast-fail', '-o', '_mt19937.c', '_mt19937.pyx']' returned non-zero exit status 1.
+      Cythonizing sources
+      Traceback (most recent call last):
+        File "/srv/scratch/z5312523/Miniconda3/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+          main()
+        File "/srv/scratch/z5312523/Miniconda3/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+          json_out['return_val'] = hook(**hook_input['kwargs'])
+        File "/srv/scratch/z5312523/Miniconda3/lib/python3.10/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 149, in prepare_metadata_for_build_wheel
+          return hook(metadata_directory, config_settings)
+        File "/scratch/pbs.5396469.kman.restech.unsw.edu.au/pip-build-env-nn86ml7y/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 366, in prepare_metadata_for_build_wheel
+          self.run_setup()
+        File "/scratch/pbs.5396469.kman.restech.unsw.edu.au/pip-build-env-nn86ml7y/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 487, in run_setup
+          super().run_setup(setup_script=setup_script)
+        File "/scratch/pbs.5396469.kman.restech.unsw.edu.au/pip-build-env-nn86ml7y/overlay/lib/python3.10/site-packages/setuptools/build_meta.py", line 311, in run_setup
+          exec(code, locals())
+        File "<string>", line 488, in <module>
+        File "<string>", line 469, in setup_package
+        File "<string>", line 275, in generate_cython
+      RuntimeError: Running cythonize failed!
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+e.coli
+Traceback (most recent call last):
+  File "/srv/scratch/z5312523/deepfri37cuda/DeepFRI/predict.py", line 3, in <module>
+    from deepfrier.Predictor import Predictor
+  File "/srv/scratch/z5312523/deepfri37cuda/DeepFRI/deepfrier/Predictor.py", line 9, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+s.aureus
+Traceback (most recent call last):
+  File "/srv/scratch/z5312523/deepfri37cuda/DeepFRI/predict.py", line 3, in <module>
+    from deepfrier.Predictor import Predictor
+  File "/srv/scratch/z5312523/deepfri37cuda/DeepFRI/deepfrier/Predictor.py", line 9, in <module>
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
+
+================================================================================
+                     Resource Usage on 29/05/2024 20:58:15                      
+
+Job Id: 5396469 
+Queue: GENERAL
+Walltime: 00:15:42  (requested 12:00:00)
+Job unsucesfull. Exit Status 1 - Exit status refers to the exit value of the
+top process in the job, typically the shell.
+This may be the exit value of the last command executed in the shell.
+See job output error.
+
+--------------------------------------------------------------------------------
+|              |             GPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node  GPU ID | Requested   Used   Efficiency | Available   Used              |
+| k103    1    |     1        0.0       0%     | 32768 MiB   0.0B              |
+--------------------------------------------------------------------------------
+|Total         |     1        0.0      0.0%    |                               |
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+|              |             CPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node         | Requested   Used   Efficiency | Requested   Used   Efficiency |
+| k103         |    20       0.06      0.0%    |  180.0gb   1.59gb     0.9%    |
+--------------------------------------------------------------------------------

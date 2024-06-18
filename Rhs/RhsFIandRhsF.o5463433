@@ -1,0 +1,45 @@
+RhsFI
+2024-06-17 21:59:31.643633: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-06-17 21:59:31.643663: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+usage: predict.py [-h] [-s SEQ] [-cm CMAP] [-pdb PDB_FN] [--cmap_csv CMAP_CSV]
+                  [--pdb_dir PDB_DIR] [--fasta_fn FASTA_FN]
+                  [--model_config MODEL_CONFIG] -ont {mf,bp,cc,ec}
+                  [{mf,bp,cc,ec} ...] [-o OUTPUT_FN_PREFIX] [-v]
+                  [--use_guided_grads] [--saliency]
+predict.py: error: unrecognized arguments: RhsFI
+RhsF
+2024-06-17 22:00:51.393053: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-06-17 22:00:51.393086: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+usage: predict.py [-h] [-s SEQ] [-cm CMAP] [-pdb PDB_FN] [--cmap_csv CMAP_CSV]
+                  [--pdb_dir PDB_DIR] [--fasta_fn FASTA_FN]
+                  [--model_config MODEL_CONFIG] -ont {mf,bp,cc,ec}
+                  [{mf,bp,cc,ec} ...] [-o OUTPUT_FN_PREFIX] [-v]
+                  [--use_guided_grads] [--saliency]
+predict.py: error: unrecognized arguments: RhsF
+
+================================================================================
+                     Resource Usage on 17/06/2024 22:01:06                      
+
+Job Id: 5463433 
+Queue: GENERAL
+Walltime: 00:02:03  (requested 12:00:00)
+Job unsucesfull. Exit Status 2 - Exit status refers to the exit value of the
+top process in the job, typically the shell.
+This may be the exit value of the last command executed in the shell.
+See job output error.
+
+--------------------------------------------------------------------------------
+|              |             GPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node  GPU ID | Requested   Used   Efficiency | Available   Used              |
+| k103    1    |     1        0.0       0%     | 32768 MiB   0.0B              |
+--------------------------------------------------------------------------------
+|Total         |     1        0.0      0.0%    |                               |
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+|              |             CPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node         | Requested   Used   Efficiency | Requested   Used   Efficiency |
+| k103         |    20       0.13      1.0%    |  180.0gb   0.77gb     0.4%    |
+--------------------------------------------------------------------------------

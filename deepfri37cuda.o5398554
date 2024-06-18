@@ -1,0 +1,28 @@
+random
+2024-06-01 17:13:55.568000: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-06-01 17:13:55.568025: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+
+================================================================================
+                     Resource Usage on 01/06/2024 17:14:23                      
+
+Job Id: 5398554 
+Queue: GENERAL
+Walltime: 00:00:38  (requested 12:00:00)
+Job exited with SIGTERM (15) signal.
+Exit Status 271 - Termination request. See job output error.
+
+--------------------------------------------------------------------------------
+|              |             GPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node  GPU ID | Requested   Used   Efficiency | Available   Used              |
+| k105    1    |     1        0.0       0%     | 32768 MiB   0.0B              |
+--------------------------------------------------------------------------------
+|Total         |     1        0.0      0.0%    |                               |
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+|              |             CPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node         | Requested   Used   Efficiency | Requested   Used   Efficiency |
+| k105         |    20       0.11      1.0%    |  180.0gb   0.59gb     0.3%    |
+--------------------------------------------------------------------------------
