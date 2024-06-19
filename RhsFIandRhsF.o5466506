@@ -1,0 +1,165 @@
+Retrieving notices: ...working... done
+Channels:
+ - bioconda
+ - conda-forge
+ - defaults
+ - nvidia/label/cuda-10.1.0
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... failed
+
+PackagesNotFoundError: The following packages are not available from current channels:
+
+  - nvidia/label/cuda-10.1.0::cuda-toolkit
+
+Current channels:
+
+  - https://conda.anaconda.org/bioconda
+  - https://conda.anaconda.org/conda-forge
+  - defaults
+  - https://conda.anaconda.org/nvidia/label/cuda-10.1.0
+
+To search for alternate channels that may provide the conda package you're
+looking for, navigate to
+
+    https://anaconda.org
+
+and use the search bar at the top of the page.
+
+
+RhsFI
+2024-06-18 10:02:53.736452: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-06-18 10:02:53.736477: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-06-18 10:03:28.682030: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2024-06-18 10:03:28.714877: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.73GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-06-18 10:03:28.714977: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-06-18 10:03:28.715795: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory
+2024-06-18 10:03:28.716472: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcufft.so.10'; dlerror: libcufft.so.10: cannot open shared object file: No such file or directory
+2024-06-18 10:03:28.717101: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcurand.so.10'; dlerror: libcurand.so.10: cannot open shared object file: No such file or directory
+2024-06-18 10:03:28.717699: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory
+2024-06-18 10:03:28.718339: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcusparse.so.10'; dlerror: libcusparse.so.10: cannot open shared object file: No such file or directory
+2024-06-18 10:03:28.719094: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudnn.so.7'; dlerror: libcudnn.so.7: cannot open shared object file: No such file or directory
+2024-06-18 10:03:28.719109: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1753] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-06-18 10:03:28.719482: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-18 10:03:28.740324: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2800000000 Hz
+2024-06-18 10:03:28.742029: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56042f9fdd10 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-06-18 10:03:28.742053: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2024-06-18 10:03:28.743695: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-06-18 10:03:28.743706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      
+### Computing predictions on a single protein...
+Protein GO-term/EC-number Score GO-term/EC-number name
+query_prot GO:0140096 0.16045 catalytic activity, acting on a protein
+query_prot GO:0030246 0.14852 carbohydrate binding
+query_prot GO:0005215 0.11428 transporter activity
+query_prot GO:0008233 0.10977 peptidase activity
+query_prot GO:0016772 0.10964 transferase activity, transferring phosphorus-containing groups
+query_prot GO:0022857 0.10938 transmembrane transporter activity
+query_prot GO:0003677 0.10714 DNA binding
+query_prot GO:0016746 0.10672 transferase activity, transferring acyl groups
+query_prot GO:0070011 0.10664 peptidase activity, acting on L-amino acid peptides
+### Saving predictions to *.json file...
+RhsF
+2024-06-18 10:03:31.308681: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-06-18 10:03:31.308716: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2024-06-18 10:03:34.947627: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2024-06-18 10:03:34.983471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.73GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-06-18 10:03:34.983565: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory
+2024-06-18 10:03:34.983603: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory
+2024-06-18 10:03:34.983645: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcufft.so.10'; dlerror: libcufft.so.10: cannot open shared object file: No such file or directory
+2024-06-18 10:03:34.983677: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcurand.so.10'; dlerror: libcurand.so.10: cannot open shared object file: No such file or directory
+2024-06-18 10:03:34.983708: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory
+2024-06-18 10:03:34.983739: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcusparse.so.10'; dlerror: libcusparse.so.10: cannot open shared object file: No such file or directory
+2024-06-18 10:03:34.983772: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudnn.so.7'; dlerror: libcudnn.so.7: cannot open shared object file: No such file or directory
+2024-06-18 10:03:34.983776: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1753] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-06-18 10:03:34.984015: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-06-18 10:03:35.002345: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2800000000 Hz
+2024-06-18 10:03:35.003614: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55a23dea6530 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-06-18 10:03:35.003631: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2024-06-18 10:03:35.004893: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-06-18 10:03:35.004904: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      
+### Computing predictions on a single protein...
+Protein GO-term/EC-number Score GO-term/EC-number name
+query_prot GO:0030246 0.23962 carbohydrate binding
+query_prot GO:0061783 0.18127 peptidoglycan muralytic activity
+query_prot GO:0033218 0.17908 amide binding
+query_prot GO:0042277 0.17612 peptide binding
+query_prot GO:0016798 0.17423 hydrolase activity, acting on glycosyl bonds
+query_prot GO:0140096 0.16963 catalytic activity, acting on a protein
+query_prot GO:0030247 0.16066 polysaccharide binding
+query_prot GO:0016788 0.15754 hydrolase activity, acting on ester bonds
+query_prot GO:0005539 0.15745 glycosaminoglycan binding
+query_prot GO:0004553 0.15550 hydrolase activity, hydrolyzing O-glycosyl compounds
+query_prot GO:0008236 0.15343 serine-type peptidase activity
+query_prot GO:0016825 0.15333 hydrolase activity, acting on acid phosphorus-nitrogen bonds
+query_prot GO:0017171 0.15318 serine hydrolase activity
+query_prot GO:0008233 0.14489 peptidase activity
+query_prot GO:0070011 0.14252 peptidase activity, acting on L-amino acid peptides
+query_prot GO:0004180 0.13944 carboxypeptidase activity
+query_prot GO:0003796 0.13941 lysozyme activity
+query_prot GO:0031406 0.13896 carboxylic acid binding
+query_prot GO:0043177 0.13887 organic acid binding
+query_prot GO:0015925 0.13469 galactosidase activity
+query_prot GO:0008810 0.13348 cellulase activity
+query_prot GO:0015929 0.12863 hexosaminidase activity
+query_prot GO:0004252 0.12764 serine-type endopeptidase activity
+query_prot GO:0048029 0.12676 monosaccharide binding
+query_prot GO:0004518 0.12162 nuclease activity
+query_prot GO:0005198 0.12064 structural molecule activity
+query_prot GO:0003677 0.12043 DNA binding
+query_prot GO:0070008 0.11781 serine-type exopeptidase activity
+query_prot GO:0008238 0.11597 exopeptidase activity
+query_prot GO:0005509 0.11595 calcium ion binding
+query_prot GO:0008289 0.11262 lipid binding
+query_prot GO:0015926 0.11248 glucosidase activity
+query_prot GO:0042803 0.11109 protein homodimerization activity
+query_prot GO:0016638 0.11015 oxidoreductase activity, acting on the CH-NH2 group of donors
+query_prot GO:0090729 0.10793 toxin activity
+query_prot GO:0046914 0.10738 transition metal ion binding
+query_prot GO:0005215 0.10724 transporter activity
+query_prot GO:1901681 0.10663 sulfur compound binding
+query_prot GO:0097599 0.10598 xylanase activity
+query_prot GO:0016829 0.10482 lyase activity
+query_prot GO:0098772 0.10468 molecular function regulator
+query_prot GO:0042802 0.10462 identical protein binding
+query_prot GO:0004175 0.10457 endopeptidase activity
+query_prot GO:0008237 0.10450 metallopeptidase activity
+query_prot GO:0072341 0.10380 modified amino acid binding
+query_prot GO:0016661 0.10369 oxidoreductase activity, acting on other nitrogenous compounds as donors
+query_prot GO:0008061 0.10355 chitin binding
+query_prot GO:0004185 0.10242 serine-type carboxypeptidase activity
+query_prot GO:0010181 0.10182 FMN binding
+query_prot GO:0016298 0.10177 lipase activity
+query_prot GO:0003723 0.10063 RNA binding
+### Saving predictions to *.json file...
+
+================================================================================
+                     Resource Usage on 18/06/2024 10:03:41                      
+
+Job Id: 5466506 
+Queue: GENERAL
+Walltime: 00:03:45  (requested 12:00:00)
+Job execution was successful. Exit Status 0. 
+
+--------------------------------------------------------------------------------
+|              |             GPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node  GPU ID | Requested   Used   Efficiency | Available   Used              |
+| k106    1    |     1        0.0       0%     | 32768 MiB   0.0B              |
+--------------------------------------------------------------------------------
+|Total         |     1        0.0      0.0%    |                               |
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+|              |             CPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node         | Requested   Used   Efficiency | Requested   Used   Efficiency |
+| k106         |    20       0.16      1.0%    |  180.0gb   1.93gb     1.1%    |
+--------------------------------------------------------------------------------
