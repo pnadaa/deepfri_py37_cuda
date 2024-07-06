@@ -20,7 +20,7 @@ source /srv/scratch/z5312523/Miniconda3/etc/profile.d/conda.sh
 
 conda activate py37cuda
 # conda install -n py37cuda pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1.168 -c pytorch -y
-conda install -n py37cuda anaconda::cudnn
+# conda install -n py37cuda anaconda::cudnn
 
 echo "RhsFI"
 python predict.py --seq 'MKEIDLLYENIYQLLIKPYLLDLSSQSGKKIELNYTCKIKDAADEIKGSMIFNDVDGKQKATCTIRVLILKTFHDGRYRFVIESVIYDLINNYSGFILTGRLFWQGEGFGHELFPVTNKYNAWRWKNKKIIDISW' -ont mf --verbose --output_fn_prefix 'RhsFI'
