@@ -17,7 +17,7 @@ source /srv/scratch/z5312523/Miniconda3/etc/profile.d/conda.sh
 # * [Newest Models](https://users.flatironinstitute.org/~renfrew/DeepFRI_data/newest_trained_models.tar.gz) (use these models if you run DeepFRI on CPU)
 
 conda activate py37cuda
-conda install -n py37cuda pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1.168 -c pytorch -y
+# conda install -n py37cuda pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1.168 -c pytorch -y
 
 echo "RhsFI"
 python predict.py --seq 'MKEIDLLYENIYQLLIKPYLLDLSSQSGKKIELNYTCKIKDAADEIKGSMIFNDVDGKQKATCTIRVLILKTFHDGRYRFVIESVIYDLINNYSGFILTGRLFWQGEGFGHELFPVTNKYNAWRWKNKKIIDISW' -ont mf --verbose --output_fn_prefix 'RhsFI'
