@@ -16,8 +16,11 @@ source /srv/scratch/z5312523/Miniconda3/etc/profile.d/conda.sh
 # * [Models](https://users.flatironinstitute.org/~renfrew/DeepFRI_data/trained_models.tar.gz) (use these models if you run DeepFRI on GPU)
 # * [Newest Models](https://users.flatironinstitute.org/~renfrew/DeepFRI_data/newest_trained_models.tar.gz) (use these models if you run DeepFRI on CPU)
 
+# add export LD_LIBRARY_PATH="$CONDA_PREFIX/lib" to bashrc for GPU
+
 conda activate py37cuda
 # conda install -n py37cuda pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1.168 -c pytorch -y
+# conda install -n py37cuda anaconda::cudnn
 
 echo "RhsFI"
 python predict.py --seq 'MKEIDLLYENIYQLLIKPYLLDLSSQSGKKIELNYTCKIKDAADEIKGSMIFNDVDGKQKATCTIRVLILKTFHDGRYRFVIESVIYDLINNYSGFILTGRLFWQGEGFGHELFPVTNKYNAWRWKNKKIIDISW' -ont mf --verbose --output_fn_prefix 'RhsFI'
