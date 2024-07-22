@@ -1,0 +1,238 @@
+There are no unused tarball(s) to remove.
+There are no index cache(s) to remove.
+There are no unused package(s) to remove.
+There are no tempfile(s) to remove.
+There are no logfile(s) to remove.
+Retrieving notices: ...working... done
+WARNING: A conda environment already exists at '/srv/scratch/z5312523/Miniconda3/envs/py37cuda'
+Remove existing environment (y/[n])? 
+
+CondaSystemExit: Exiting.
+
+Channels:
+ - pytorch
+ - bioconda
+ - conda-forge
+ - defaults
+ - anaconda
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /srv/scratch/z5312523/Miniconda3/envs/py37cuda
+
+  added / updated specs:
+    - cudatoolkit=10.1.168
+    - pytorch==1.6.0
+    - torchvision==0.7.0
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    openssl-3.3.1              |       h4bc722e_2         2.8 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         2.8 MB
+
+The following packages will be UPDATED:
+
+  openssl                                  3.3.1-h4ab18f5_1 --> 3.3.1-h4bc722e_2 
+
+
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+Channels:
+ - bioconda
+ - conda-forge
+ - defaults
+ - anaconda
+ - pytorch
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /srv/scratch/z5312523/Miniconda3/envs/py37cuda
+
+  added / updated specs:
+    - conda-forge::cudatoolkit-dev
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    cudatoolkit-dev-11.7.0     |       h1de0b5d_6          14 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:          14 KB
+
+The following NEW packages will be INSTALLED:
+
+  cudatoolkit-dev    conda-forge/linux-64::cudatoolkit-dev-11.7.0-h1de0b5d_6 
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+Channels:
+ - bioconda
+ - conda-forge
+ - defaults
+ - anaconda
+ - pytorch
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+# All requested packages already installed.
+
+RhsFI
+2024-07-18 14:15:25.573452: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-18 14:17:47.864265: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2024-07-18 14:17:47.933655: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:cc:00.0 name: NVIDIA A100-PCIE-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 39.56GiB deviceMemoryBandwidth: 1.41TiB/s
+2024-07-18 14:17:47.933687: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-18 14:17:48.656659: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2024-07-18 14:17:48.912331: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2024-07-18 14:17:49.125961: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2024-07-18 14:17:49.381476: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2024-07-18 14:17:49.569257: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2024-07-18 14:17:49.735369: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-18 14:17:49.737024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2024-07-18 14:17:49.737265: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-18 14:17:49.754446: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2800000000 Hz
+2024-07-18 14:17:49.755315: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55864d244f30 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-07-18 14:17:49.755326: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2024-07-18 14:17:49.842032: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55864d0070d0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-07-18 14:17:49.842057: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA A100-PCIE-40GB, Compute Capability 8.0
+2024-07-18 14:17:49.842798: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:cc:00.0 name: NVIDIA A100-PCIE-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 39.56GiB deviceMemoryBandwidth: 1.41TiB/s
+2024-07-18 14:17:49.842821: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-18 14:17:49.842838: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2024-07-18 14:17:49.842844: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2024-07-18 14:17:49.842850: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2024-07-18 14:17:49.842856: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2024-07-18 14:17:49.842861: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2024-07-18 14:17:49.842867: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-18 14:17:49.843565: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2024-07-18 14:17:49.843585: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Traceback (most recent call last):
+  File "predict.py", line 35, in <module>
+    predictor = Predictor(models[ont], gcn=gcn)
+  File "/srv/scratch/z5312523/deepfri37cuda/DeepFRI/deepfrier/Predictor.py", line 56, in __init__
+    self._load_model()
+  File "/srv/scratch/z5312523/deepfri37cuda/DeepFRI/deepfrier/Predictor.py", line 63, in _load_model
+    'SumPooling': SumPooling})
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/saving/save.py", line 182, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects, compile)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/saving/hdf5_format.py", line 178, in load_model_from_hdf5
+    custom_objects=custom_objects)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/saving/model_config.py", line 55, in model_from_config
+    return deserialize(config, custom_objects=custom_objects)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/layers/serialization.py", line 175, in deserialize
+    printable_module_name='layer')
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/utils/generic_utils.py", line 358, in deserialize_keras_object
+    list(custom_objects.items())))
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/engine/training.py", line 2239, in from_config
+    config, custom_objects=custom_objects)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/engine/functional.py", line 617, in from_config
+    config, custom_objects)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/engine/functional.py", line 1214, in reconstruct_from_config
+    process_node(layer, node_data)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/engine/functional.py", line 1162, in process_node
+    output_tensors = layer(input_tensors, **kwargs)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/engine/base_layer.py", line 926, in __call__
+    input_list)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1098, in _functional_construction_call
+    self._maybe_build(inputs)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/engine/base_layer.py", line 2643, in _maybe_build
+    self.build(input_shapes)  # pylint:disable=not-callable
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/layers/convolutional.py", line 204, in build
+    dtype=self.dtype)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/engine/base_layer.py", line 614, in add_weight
+    caching_device=caching_device)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/training/tracking/base.py", line 750, in _add_variable_with_custom_getter
+    **kwargs_for_getter)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/engine/base_layer_utils.py", line 145, in make_variable
+    shape=variable_shape if variable_shape else None)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/ops/variables.py", line 260, in __call__
+    return cls._variable_v1_call(*args, **kwargs)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/ops/variables.py", line 221, in _variable_v1_call
+    shape=shape)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/ops/variables.py", line 199, in <lambda>
+    previous_getter = lambda **kwargs: default_variable_creator(None, **kwargs)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/ops/variable_scope.py", line 2597, in default_variable_creator
+    shape=shape)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/ops/variables.py", line 264, in __call__
+    return super(VariableMetaclass, cls).__call__(*args, **kwargs)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 1518, in __init__
+    distribute_strategy=distribute_strategy)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 1651, in _init_from_args
+    initial_value() if init_from_fn else initial_value,
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/keras/initializers/initializers_v2.py", line 397, in __call__
+    return super(VarianceScaling, self).__call__(shape, dtype=_get_dtype(dtype))
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/ops/init_ops_v2.py", line 561, in __call__
+    return self._random_generator.random_uniform(shape, -limit, limit, dtype)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/ops/init_ops_v2.py", line 1044, in random_uniform
+    shape=shape, minval=minval, maxval=maxval, dtype=dtype, seed=self.seed)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/ops/random_ops.py", line 288, in random_uniform
+    shape = tensor_util.shape_tensor(shape)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/framework/tensor_util.py", line 1029, in shape_tensor
+    return ops.convert_to_tensor(shape, dtype=dtype, name="shape")
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/framework/ops.py", line 1499, in convert_to_tensor
+    ret = conversion_func(value, dtype=dtype, name=name, as_ref=as_ref)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/framework/constant_op.py", line 338, in _constant_tensor_conversion_function
+    return constant(v, dtype=dtype, name=name)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/framework/constant_op.py", line 264, in constant
+    allow_broadcast=True)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/framework/constant_op.py", line 275, in _constant_impl
+    return _constant_eager_impl(ctx, value, dtype, shape, verify_shape)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/framework/constant_op.py", line 300, in _constant_eager_impl
+    t = convert_to_eager_tensor(value, ctx, dtype)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/framework/constant_op.py", line 97, in convert_to_eager_tensor
+    ctx.ensure_initialized()
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/site-packages/tensorflow/python/eager/context.py", line 539, in ensure_initialized
+    context_handle = pywrap_tfe.TFE_NewContext(opts)
+tensorflow.python.framework.errors_impl.InternalError: CUDA runtime implicit initialization on GPU:0 failed. Status: device kernel image is invalid
+
+================================================================================
+                     Resource Usage on 18/07/2024 14:22:21                      
+
+Job Id: 5591010 
+Queue: GENERAL
+Walltime: 00:40:52  (requested 12:00:00)
+Job unsucesfull. Exit Status 1 - Exit status refers to the exit value of the
+top process in the job, typically the shell.
+This may be the exit value of the last command executed in the shell.
+See job output error.
+
+--------------------------------------------------------------------------------
+|              |             GPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node  GPU ID | Requested   Used   Efficiency | Available   Used              |
+| k091    6    |     1        0.0       0%     | 40960 MiB  518.0M             |
+--------------------------------------------------------------------------------
+|Total         |     1        0.0      0.0%    |                               |
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+|              |             CPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node         | Requested   Used   Efficiency | Requested   Used   Efficiency |
+| k091         |    20       0.19      1.0%    |  180.0gb   16.74gb    9.3%    |
+--------------------------------------------------------------------------------

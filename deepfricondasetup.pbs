@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#PBS -N deepfri37cuda
+#PBS -l select=1:ncpus=20:ngpus=1:mem=180gb
+#PBS -l walltime=12:00:00
+
+#PBS -j oe
+#PBS -M christopher.jin@unsw.edu.au
+#PBS -m ae
+
+cd /srv/scratch/z5312523/deepfri37cuda
+
+source /srv/scratch/z5312523/Miniconda3/etc/profile.d/conda.sh
+
+conda remove -n py3cuda --all -y
+conda clean --all -y
+# * [Models](https://users.flatironinstitute.org/~renfrew/DeepFRI_data/trained_models.tar.gz) (use these models if you run DeepFRI on GPU)
+# * [Newest Models](https://users.flatironinstitute.org/~renfrew/DeepFRI_data/newest_trained_models.tar.gz) (use these models if you run DeepFRI on CPU)
+
+
+conda create --name py37cuda python=3.7
+conda activate py37cuda
+conda install -n py37cuda pytorch==1.6.0 torchvision==0.7.0 cudatoolkit=10.1.168 -c pytorch -y
+conda install -n py37cuda conda-forge::cudatoolkit-dev
+conda install -n py37cuda anaconda::cudnn
+
+cd /srv/scratch/z5312523/deepfri37cuda/DeepFRI/
+echo "RhsFI"
+python predict.py --seq 'MKEIDLLYENIYQLLIKPYLLDLSSQSGKKIELNYTCKIKDAADEIKGSMIFNDVDGKQKATCTIRVLILKTFHDGRYRFVIESVIYDLINNYSGFILTGRLFWQGEGFGHELFPVTNKYNAWRWKNKKIIDISW' -ont mf --verbose --output_fn_prefix 'RhsFI'

@@ -1,0 +1,126 @@
+Retrieving notices: ...working... done
+WARNING: A conda environment already exists at '/srv/scratch/z5312523/Miniconda3/envs/py37cuda'
+Remove existing environment (y/[n])? 
+
+CondaSystemExit: Exiting.
+
+Channels:
+ - pytorch
+ - bioconda
+ - conda-forge
+ - defaults
+ - anaconda
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+# All requested packages already installed.
+
+Channels:
+ - bioconda
+ - conda-forge
+ - defaults
+ - anaconda
+ - pytorch
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /srv/scratch/z5312523/Miniconda3/envs/py37cuda
+
+  added / updated specs:
+    - conda-forge::cudatoolkit-dev==10.1.243
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    cudatoolkit-dev-10.1.243   |       h516909a_3           9 KB  conda-forge
+    ------------------------------------------------------------
+                                           Total:           9 KB
+
+The following NEW packages will be INSTALLED:
+
+  cudatoolkit-dev    conda-forge/linux-64::cudatoolkit-dev-10.1.243-h516909a_3 
+
+
+Proceed ([y]/n)? 
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+ERROR conda.core.link:_execute(950): An error occurred while installing package 'conda-forge::cudatoolkit-dev-10.1.243-h516909a_3'.
+Rolling back transaction: ...working... done
+
+LinkError: post-link script failed for package conda-forge::cudatoolkit-dev-10.1.243-h516909a_3
+location of failed script: /srv/scratch/z5312523/Miniconda3/envs/py37cuda/bin/.cudatoolkit-dev-post-link.sh
+==> script messages <==
+<None>
+==> script output <==
+stdout: Running Post installation
+downloading https://developer.download.nvidia.com/compute/cuda/10.1/Prod/local_installers/cuda_10.1.243_418.87.00_rhel6.run to /srv/scratch/z5312523/Miniconda3/envs/py37cuda/pkgs/cudatoolkit-dev/cuda_10.1.243_418.87.00_rhel6.run
+
+stderr: Traceback (most recent call last):
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/bin/cudatoolkit-dev-post-install.py", line 273, in <module>
+    _main()
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/bin/cudatoolkit-dev-post-install.py", line 266, in _main
+    extractor.download_blobs()
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/bin/cudatoolkit-dev-post-install.py", line 89, in download_blobs
+    self.download(dl_url, dl_path)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/bin/cudatoolkit-dev-post-install.py", line 76, in download
+    raise exc
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/bin/cudatoolkit-dev-post-install.py", line 74, in download
+    subprocess.check_call(cmd)
+  File "/srv/scratch/z5312523/Miniconda3/envs/py37cuda/lib/python3.7/subprocess.py", line 363, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['wget', 'https://developer.download.nvidia.com/compute/cuda/10.1/Prod/local_installers/cuda_10.1.243_418.87.00_rhel6.run', '-O', '/srv/scratch/z5312523/Miniconda3/envs/py37cuda/pkgs/cudatoolkit-dev/cuda_10.1.243_418.87.00_rhel6.run', '-q']' returned non-zero exit status 3.
+
+return code: 1
+
+()
+
+Channels:
+ - bioconda
+ - conda-forge
+ - defaults
+ - anaconda
+ - pytorch
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... Developer error: uncaught exception in CFile::~CFile, explicitly call CFile::close to handle exception.
+Unable to close file /srv/scratch/z5312523/Miniconda3/pkgs/cache/ffeee55f.solvDeveloper error: uncaught exception in CFile::~CFile, explicitly call CFile::close to handle exception.
+Unable to close file /srv/scratch/z5312523/Miniconda3/pkgs/cache/2a957770.solvDeveloper error: uncaught exception in CFile::~CFile, explicitly call CFile::close to handle exception.
+Unable to close file /srv/scratch/z5312523/Miniconda3/pkgs/cache/497deca9.solvDeveloper error: uncaught exception in CFile::~CFile, explicitly call CFile::close to handle exception.
+Unable to close file /srv/scratch/z5312523/Miniconda3/pkgs/cache/09cdf8bf.solvDeveloper error: uncaught exception in CFile::~CFile, explicitly call CFile::close to handle exception.
+Unable to close file /srv/scratch/z5312523/Miniconda3/pkgs/cache/47929eba.solvdone
+Solving environment: ...working... done
+
+# All requested packages already installed.
+
+
+================================================================================
+                     Resource Usage on 09/07/2024 22:12:03                      
+
+Job Id: 5573777 
+Queue: GENERAL
+Walltime: 00:08:07  (requested 12:00:00)
+Job execution was successful. Exit Status 0. 
+
+--------------------------------------------------------------------------------
+|              |             GPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node  GPU ID | Requested   Used   Efficiency | Available   Used              |
+| k106    1    |     1        0.0       0%     | 32768 MiB   0.0B              |
+--------------------------------------------------------------------------------
+|Total         |     1        0.0      0.0%    |                               |
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+|              |             CPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node         | Requested   Used   Efficiency | Requested   Used   Efficiency |
+| k106         |    20       0.17      1.0%    |  180.0gb   3.85gb     2.1%    |
+--------------------------------------------------------------------------------

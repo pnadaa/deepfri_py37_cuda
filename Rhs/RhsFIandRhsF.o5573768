@@ -1,0 +1,281 @@
+RhsFI
+2024-07-09 12:27:24.096839: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:28:15.979138: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2024-07-09 12:28:16.022752: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.73GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-07-09 12:28:16.022785: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:28:16.252464: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2024-07-09 12:28:16.353111: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2024-07-09 12:28:16.553320: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2024-07-09 12:28:16.681226: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2024-07-09 12:28:16.790669: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2024-07-09 12:28:16.937108: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:28:16.937700: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2024-07-09 12:28:16.937962: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-09 12:28:16.957653: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2800000000 Hz
+2024-07-09 12:28:16.958897: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55dfc4207b00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-07-09 12:28:16.958918: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2024-07-09 12:28:17.044215: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55dfc41c01e0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-07-09 12:28:17.044241: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-32GB, Compute Capability 7.0
+2024-07-09 12:28:17.044972: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.73GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-07-09 12:28:17.045004: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:28:17.045030: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2024-07-09 12:28:17.045037: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2024-07-09 12:28:17.045043: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2024-07-09 12:28:17.045049: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2024-07-09 12:28:17.045055: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2024-07-09 12:28:17.045062: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:28:17.045828: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2024-07-09 12:28:17.045853: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:28:17.932336: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-07-09 12:28:17.932371: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2024-07-09 12:28:17.932375: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2024-07-09 12:28:17.933006: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30123 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-32GB, pci bus id: 0000:3b:00.0, compute capability: 7.0)
+2024-07-09 12:28:19.314248: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:28:20.706945: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2024-07-09 12:28:20.737899: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2024-07-09 12:28:21.087617: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+### Computing predictions on a single protein...
+Protein GO-term/EC-number Score GO-term/EC-number name
+query_prot GO:0140096 0.16045 catalytic activity, acting on a protein
+query_prot GO:0030246 0.14852 carbohydrate binding
+query_prot GO:0005215 0.11428 transporter activity
+query_prot GO:0008233 0.10977 peptidase activity
+query_prot GO:0016772 0.10964 transferase activity, transferring phosphorus-containing groups
+query_prot GO:0022857 0.10938 transmembrane transporter activity
+query_prot GO:0003677 0.10714 DNA binding
+query_prot GO:0016746 0.10672 transferase activity, transferring acyl groups
+query_prot GO:0070011 0.10665 peptidase activity, acting on L-amino acid peptides
+### Saving predictions to *.json file...
+RhsF
+2024-07-09 12:28:30.028337: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:28:46.750679: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2024-07-09 12:28:46.788646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.73GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-07-09 12:28:46.788680: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:28:46.794249: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2024-07-09 12:28:46.797328: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2024-07-09 12:28:46.801106: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2024-07-09 12:28:46.804292: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2024-07-09 12:28:46.806666: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2024-07-09 12:28:46.822879: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:28:46.823318: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2024-07-09 12:28:46.823555: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-09 12:28:46.841726: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2800000000 Hz
+2024-07-09 12:28:46.842973: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555d07caabb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-07-09 12:28:46.842990: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2024-07-09 12:28:46.918162: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555d07c67b50 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-07-09 12:28:46.918193: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-32GB, Compute Capability 7.0
+2024-07-09 12:28:46.918606: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.73GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-07-09 12:28:46.918636: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:28:46.918659: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2024-07-09 12:28:46.918666: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2024-07-09 12:28:46.918672: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2024-07-09 12:28:46.918678: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2024-07-09 12:28:46.918685: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2024-07-09 12:28:46.918692: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:28:46.919055: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2024-07-09 12:28:46.919074: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:28:47.325028: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-07-09 12:28:47.325058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2024-07-09 12:28:47.325062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2024-07-09 12:28:47.325641: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30123 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-32GB, pci bus id: 0000:3b:00.0, compute capability: 7.0)
+2024-07-09 12:28:48.017688: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:28:48.831126: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2024-07-09 12:28:48.861296: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2024-07-09 12:28:49.215946: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+### Computing predictions on a single protein...
+Protein GO-term/EC-number Score GO-term/EC-number name
+query_prot GO:0030246 0.23962 carbohydrate binding
+query_prot GO:0061783 0.18127 peptidoglycan muralytic activity
+query_prot GO:0033218 0.17908 amide binding
+query_prot GO:0042277 0.17612 peptide binding
+query_prot GO:0016798 0.17423 hydrolase activity, acting on glycosyl bonds
+query_prot GO:0140096 0.16963 catalytic activity, acting on a protein
+query_prot GO:0030247 0.16066 polysaccharide binding
+query_prot GO:0016788 0.15754 hydrolase activity, acting on ester bonds
+query_prot GO:0005539 0.15745 glycosaminoglycan binding
+query_prot GO:0004553 0.15550 hydrolase activity, hydrolyzing O-glycosyl compounds
+query_prot GO:0008236 0.15343 serine-type peptidase activity
+query_prot GO:0016825 0.15333 hydrolase activity, acting on acid phosphorus-nitrogen bonds
+query_prot GO:0017171 0.15318 serine hydrolase activity
+query_prot GO:0008233 0.14489 peptidase activity
+query_prot GO:0070011 0.14252 peptidase activity, acting on L-amino acid peptides
+query_prot GO:0004180 0.13944 carboxypeptidase activity
+query_prot GO:0003796 0.13941 lysozyme activity
+query_prot GO:0031406 0.13896 carboxylic acid binding
+query_prot GO:0043177 0.13887 organic acid binding
+query_prot GO:0015925 0.13469 galactosidase activity
+query_prot GO:0008810 0.13348 cellulase activity
+query_prot GO:0015929 0.12863 hexosaminidase activity
+query_prot GO:0004252 0.12764 serine-type endopeptidase activity
+query_prot GO:0048029 0.12676 monosaccharide binding
+query_prot GO:0004518 0.12162 nuclease activity
+query_prot GO:0005198 0.12064 structural molecule activity
+query_prot GO:0003677 0.12043 DNA binding
+query_prot GO:0070008 0.11781 serine-type exopeptidase activity
+query_prot GO:0008238 0.11597 exopeptidase activity
+query_prot GO:0005509 0.11595 calcium ion binding
+query_prot GO:0008289 0.11262 lipid binding
+query_prot GO:0015926 0.11248 glucosidase activity
+query_prot GO:0042803 0.11109 protein homodimerization activity
+query_prot GO:0016638 0.11015 oxidoreductase activity, acting on the CH-NH2 group of donors
+query_prot GO:0090729 0.10793 toxin activity
+query_prot GO:0046914 0.10738 transition metal ion binding
+query_prot GO:0005215 0.10724 transporter activity
+query_prot GO:1901681 0.10663 sulfur compound binding
+query_prot GO:0097599 0.10598 xylanase activity
+query_prot GO:0016829 0.10482 lyase activity
+query_prot GO:0098772 0.10468 molecular function regulator
+query_prot GO:0042802 0.10462 identical protein binding
+query_prot GO:0004175 0.10457 endopeptidase activity
+query_prot GO:0008237 0.10450 metallopeptidase activity
+query_prot GO:0072341 0.10380 modified amino acid binding
+query_prot GO:0016661 0.10369 oxidoreductase activity, acting on other nitrogenous compounds as donors
+query_prot GO:0008061 0.10355 chitin binding
+query_prot GO:0004185 0.10242 serine-type carboxypeptidase activity
+query_prot GO:0010181 0.10182 FMN binding
+query_prot GO:0016298 0.10177 lipase activity
+query_prot GO:0003723 0.10063 RNA binding
+### Saving predictions to *.json file...
+RhsF_full
+2024-07-09 12:28:58.435281: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:29:04.404416: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2024-07-09 12:29:04.440257: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.73GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-07-09 12:29:04.440291: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:29:04.444748: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2024-07-09 12:29:04.447673: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2024-07-09 12:29:04.449529: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2024-07-09 12:29:04.452572: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2024-07-09 12:29:04.455037: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2024-07-09 12:29:04.459442: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:29:04.459891: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2024-07-09 12:29:04.460125: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-09 12:29:04.477730: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2800000000 Hz
+2024-07-09 12:29:04.479378: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e838bbca40 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-07-09 12:29:04.479395: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2024-07-09 12:29:04.550883: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e836854cf0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-07-09 12:29:04.550900: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-32GB, Compute Capability 7.0
+2024-07-09 12:29:04.551320: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.73GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-07-09 12:29:04.551336: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:29:04.551350: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2024-07-09 12:29:04.551356: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2024-07-09 12:29:04.551361: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2024-07-09 12:29:04.551367: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2024-07-09 12:29:04.551373: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2024-07-09 12:29:04.551378: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:29:04.551737: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2024-07-09 12:29:04.551757: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:29:04.956942: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-07-09 12:29:04.956977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2024-07-09 12:29:04.956981: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2024-07-09 12:29:04.957593: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30123 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-32GB, pci bus id: 0000:3b:00.0, compute capability: 7.0)
+2024-07-09 12:29:05.649429: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:29:06.451876: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2024-07-09 12:29:06.483545: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2024-07-09 12:29:06.724024: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+### Computing predictions on a single protein...
+Protein GO-term/EC-number Score GO-term/EC-number name
+query_prot GO:0097367 0.18608 carbohydrate derivative binding
+query_prot GO:0032553 0.13436 ribonucleotide binding
+query_prot GO:0032555 0.13091 purine ribonucleotide binding
+query_prot GO:0017076 0.13033 purine nucleotide binding
+query_prot GO:0035639 0.12413 purine ribonucleoside triphosphate binding
+query_prot GO:0032559 0.11702 adenyl ribonucleotide binding
+query_prot GO:0030554 0.11554 adenyl nucleotide binding
+query_prot GO:0005524 0.11076 ATP binding
+### Saving predictions to *.json file...
+hfq
+2024-07-09 12:29:13.254548: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:29:16.456044: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2024-07-09 12:29:16.491854: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.73GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-07-09 12:29:16.491889: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:29:16.496215: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2024-07-09 12:29:16.499088: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2024-07-09 12:29:16.500671: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2024-07-09 12:29:16.503539: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2024-07-09 12:29:16.505669: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2024-07-09 12:29:16.510131: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:29:16.510575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2024-07-09 12:29:16.510806: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-07-09 12:29:16.528728: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2800000000 Hz
+2024-07-09 12:29:16.529778: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555d685dfe50 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2024-07-09 12:29:16.529794: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2024-07-09 12:29:16.601870: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555d685bf8c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2024-07-09 12:29:16.601907: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-32GB, Compute Capability 7.0
+2024-07-09 12:29:16.602358: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.73GiB deviceMemoryBandwidth: 836.37GiB/s
+2024-07-09 12:29:16.602383: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:29:16.602400: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2024-07-09 12:29:16.602408: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2024-07-09 12:29:16.602415: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2024-07-09 12:29:16.602422: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2024-07-09 12:29:16.602430: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2024-07-09 12:29:16.602437: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:29:16.602787: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2024-07-09 12:29:16.602809: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2024-07-09 12:29:17.009499: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-07-09 12:29:17.009534: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2024-07-09 12:29:17.009538: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2024-07-09 12:29:17.010958: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30123 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-32GB, pci bus id: 0000:3b:00.0, compute capability: 7.0)
+2024-07-09 12:29:17.692952: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2024-07-09 12:29:18.481051: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2024-07-09 12:29:18.512342: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2024-07-09 12:29:18.877027: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+### Computing predictions on a single protein...
+Protein GO-term/EC-number Score GO-term/EC-number name
+query_prot GO:0003723 0.40680 RNA binding
+### Saving predictions to *.json file...
+
+================================================================================
+                     Resource Usage on 09/07/2024 12:29:31                      
+
+Job Id: 5573768 
+Queue: GENERAL
+Walltime: 00:02:33  (requested 12:00:00)
+Job execution was successful. Exit Status 0. 
+
+--------------------------------------------------------------------------------
+|              |             GPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node  GPU ID | Requested   Used   Efficiency | Available   Used              |
+| k105    1    |     1       0.03       3%     | 32768 MiB  30.26G             |
+--------------------------------------------------------------------------------
+|Total         |     1       0.03      3.0%    |                               |
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+|              |             CPUs              |            Memory             |
+--------------------------------------------------------------------------------
+| Node         | Requested   Used   Efficiency | Requested   Used   Efficiency |
+| k105         |    20       0.33      2.0%    |  180.0gb   4.33gb     2.4%    |
+--------------------------------------------------------------------------------
